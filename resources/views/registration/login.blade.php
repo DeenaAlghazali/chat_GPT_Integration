@@ -10,6 +10,12 @@
 <body>
     
     <h1>login</h1>
+    <form action="{{ route('auth.login') }}" method="post">
+        @csrf
+        email <input type="text" name="email">
+        password <input type="password" name="password">
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>
